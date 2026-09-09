@@ -9,8 +9,10 @@ import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "orders")
 public class Order {
 
     @Id
